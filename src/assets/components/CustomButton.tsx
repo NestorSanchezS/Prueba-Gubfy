@@ -1,10 +1,15 @@
+import { Button } from "@material-ui/core";
+import { ColorGreen } from '../../utils/constans';
+
+
 interface CustomButtonProps {
     onClick: () => void;
+    disabled?:boolean;
     text: string;
 }
 
-export const CustomButton = ({onClick, text}: CustomButtonProps) => {
+export const CustomButton = ({onClick, text, disabled}: CustomButtonProps) => {
   return (
-    <button onClick={onClick}>{text}</button>
+    <Button onClick={onClick} style={{ color: ColorGreen }} disabled={disabled}>{text}</Button>
   )
 }
