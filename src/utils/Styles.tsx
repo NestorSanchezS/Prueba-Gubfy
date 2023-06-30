@@ -66,7 +66,7 @@ export const stylesCard = makeStyles(() => ({
     subheader: {
       color: ColorBlack,
     },
-    bViewFilms:{
+    bCounter:{
       backgroundColor: ColorGreen,
     '&:hover': {
       backgroundColor: ColorGreen2,

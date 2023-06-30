@@ -1,5 +1,6 @@
-import { CustomButton } from "../components/CustomButton";
+
 import { useState } from 'react'
+import {CustomButton} from '../components/CustomButton';
 
 export const Count = () => {
     const [count, setCount] = useState<number>(0);
@@ -11,17 +12,14 @@ export const Count = () => {
     const decrement = (): void => {
       setCount(count - 1);
     };
-    const reset = (): void => {
-      setCount(0);
-    };
-  
+
   
     return (
       <>
         <div>
-          <p>Número: {count}</p>
+          <h1>Counter App</h1>
+          <h1 style={{fontSize:'120px', marginTop: '6px'}}>{count}</h1>
           <CustomButton onClick={increment} text="Incrementar" />
-          <CustomButton onClick={reset} text="Resetear" />
           <CustomButton onClick={decrement} text="Decrementar" />
         </div>
   
