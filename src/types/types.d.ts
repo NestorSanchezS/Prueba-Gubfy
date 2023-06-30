@@ -7,18 +7,19 @@ export interface AppBarProps {
     children: React.ReactNode;
   }
 
-export interface TodoType {
+export interface TaskType {
     id: string;
-    text: string;
-    date: string;
-    isDone: boolean;
+    title: string;
+    description: string;
+    completed: boolean;
   }
   
-export type TodoAction = 
+export type TaskAction = 
   {
     type: "ADD";
     payload: {
-      text: string;
+      title: string;
+      description: string;
     }
   } | {
     type: "DELETE" | "UPDATE",
