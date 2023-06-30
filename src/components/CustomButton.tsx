@@ -1,11 +1,6 @@
 import { Button } from "@material-ui/core";
 import { stylesCard } from "../utils/Styles";
-
-
-interface CustomButtonProps {
-    onClick: () => void;
-    text: string;
-}
+import { CustomButtonProps } from "../types/types";
 
 export const CustomButton = ({onClick, text,}: CustomButtonProps) => {
   const classes = stylesCard();

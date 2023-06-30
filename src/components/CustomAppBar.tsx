@@ -1,14 +1,10 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
-import { AppBar, Toolbar, Button, Container} from '@material-ui/core';
+import { AppBar, Toolbar, Button} from '@material-ui/core';
 import { ColorGreen } from '../utils/constans';
 import { stylesCustomAppBar } from '../utils/Styles';
 import { useLocation } from 'react-router-dom';
-
-
-interface AppBarProps {
-  children: React.ReactNode;
-}
+import { AppBarProps } from '../types/types';
 
 const CustomAppBar = ({ children }:AppBarProps): JSX.Element => {
   const classes = stylesCustomAppBar();
